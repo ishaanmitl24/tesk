@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Open+Sans:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    position:fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+.navbar .nav1{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar .nav1 .link {
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    align-self: center;
+}
+.navbar .nav1 .link a{
+    font-size: 1rem;
+    font-weight: 100;
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.navbar .nav1 .link a:hover{
+    transform: scale(1.1);
+    color: purple;
+}
+.navbar .nav1 img{
+    width: 70px;
+    height: 50px;
+    align-self: center;
+}
+.navin{
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+    padding:5px;
+    gap:0.5rem;
+    align-self: center;
+    border-radius: 1rem;
+    background-color: rgb(243, 241, 241);
+}
+.navin input{
+    outline: none;
+    border: none;
+    color: purple;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    background: transparent;
+    padding: 10px;
+}
+.navin input:focus{
+    border: 2px solid purple;
+}
+.navin button{
+    background:transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 3s;
+}
+.navin button:hover{
+    transform: scale(1.2);
+}
+.navin button:hover img{
+    transform: scale(1.2);
+}
+
+.navin button img{
+    width: 30px;
+    height: 30px;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+.products .prod-head{
+    display: inline-block;
+    flex-grow: 0;
+    align-self: flex-start;
+    margin-left: 4rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.products .products-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+.card{
+    transition: 0.3s;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card .list-group .list-group-item{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+}
+.price{
+    color: red;
+    font-weight: 600;
+}
+.cutprice{
+    color: grey;
+}
+.footer{
+    background-color: black;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.footer h1{
+    padding: 1rem 0 0 2rem;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+}
+.footer form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap:1rem;
+}
+.footer form div{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.footer form div label{
+    color: white;
+    width: 80px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+.footer form div input,textarea{
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    border-radius: 1rem;
+    padding: 4px 16px;
+    letter-spacing: 0.05em;
+}
+.footer button{
+    background-color: rgb(197, 20, 197);
+    border: none;
+    outline: none;
+    align-self: flex-start;
+    flex-grow: 0;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.footer button:hover{
+    background-color: purple;
+}
+.navbar .nav1 .menu{
+    display: none;
+    align-self: center;
+}
+.navbar .nav1 .menu div img{
+    width: 20px;
+    height: 20px;
+}
+@media (max-width:669px){
+    .navbar .nav1 .menu{
+        display: block;
+    }
+    .navbar .nav1 .link {
+        display: none;
+    }
+}
